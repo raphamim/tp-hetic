@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700"');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* général */
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -37,7 +41,29 @@ h1, h2, h3 {
     line-height: 1.2;
     color: inherit;
 }
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #f05f40;
+}
+section {
+    padding: 8rem 0;
+}
+.text-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+/* Partie Header */
 header {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
@@ -148,9 +174,6 @@ header hr {
     max-width: 50px;
     border-width: 3px;
     border-color: #f05f40;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
 }
 header p {
     font-size: 1.15rem;
@@ -172,12 +195,73 @@ header p {
     border: none;
     border-radius: 300px;
     color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 20px;
 }
 header .btn {
     background-color: #f05f40;
     border-color: #f05f40;
     color: #fff;
-    padding: 1rem 2rem;
+}
+
+/* Partie about */
+#about {
+    background-color: #f05f40;
+    color: #fff;
+}
+
+#about hr {
+    border-color: #fff;
+}
+#about p {
+    max-width: 730px;
+    color: rgba(255,255,255,.7);
+}
+#about .btn {
+    color: black;
+    background-color: white;
+}
+
+/* Partie service */
+#services .col-25 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 23%;
+    max-width: 23%;
+    margin: 0 1%;
+}
+
+#services .container:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+#services i {
+    color: #f05f40;
+}
+#services p {
+    color: #868e96;
+} 
+
+/* Partie portfolio */
+
+#portfolio {
+    padding: 0;
+}
+#portfolio .container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#portfolio .row div:first-of-type {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 0;
+    padding-left: 0;
+}
+#portfolio .row div a {
     position: relative;
-    top: 20px;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
 }
