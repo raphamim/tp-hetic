@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    font-family: Merriweather,'Open Sans',sans-serif;
+    font-family: 'Open Sans',Merriweather,sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -87,6 +87,7 @@ nav {
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s;
+    padding: 10px 0;
 }
 
 nav a {
@@ -129,8 +130,6 @@ nav .container {
     display: flex;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-align: center;
@@ -252,16 +251,76 @@ header .btn {
     margin-right: auto;
     margin-left: auto;
 }
-#portfolio .row div:first-of-type {
+.resize-box {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     padding-right: 0;
     padding-left: 0;
 }
+.resize-box img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
 #portfolio .row div a {
     position: relative;
     display: block;
     max-width: 650px;
     margin: 0 auto;
+}
+
+.portfolio-box .background-portfolio {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+} 
+.portfolio-box .background-portfolio:hover {
+    opacity: 1;
+} 
+.portfolio-box .background-portfolio .background-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Partie download */
+#download {
+    background-color: #212529;
+    color: #fff;
+}
+#download div {
+    text-align: center;
+}
+#download h2 {
+    margin-bottom: 1.5rem;
+}
+#download a {
+    color: #111;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+/* Partie contact */
+#contact p {
+    margin: 3rem 10em;
+}
+#contact .row {
+    display: block; 
+    margin: 0;
+}
+.contact-icon {
+    display: inline-block;
 }

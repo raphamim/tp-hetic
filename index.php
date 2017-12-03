@@ -60,90 +60,90 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid">
         <div class="row">
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/1.jpg">
-              <img class="img-fluid" src="asset-image/1.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/1.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/2.jpg">
-              <img class="img-fluid" src="asset-image/2.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/2.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/3.jpg">
-              <img class="img-fluid" src="asset-image/3.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/3.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/4.jpg">
-              <img class="img-fluid" src="asset-image/4.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/4.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/5.jpg">
-              <img class="img-fluid" src="asset-image/5.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/5.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div>
+          <div class="resize-box">
             <a class="portfolio-box" href="asset-image/6.jpg">
-              <img class="img-fluid" src="asset-image/6.jpg" alt="image avec texte en hover">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
+              <img src="asset-image/6.jpg" alt="image avec texte en hover">
+              <div class="background-portfolio">
+                <div class="background-content">
+                  <div>
                     Category
                   </div>
-                  <div class="project-name">
+                  <div>
                     Project Name
                   </div>
                 </div>
@@ -154,10 +154,10 @@
       </div>
     </section>
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    <section id="download">
+      <div>
+        <h2>Free Download at Start Bootstrap!</h2>
+        <a class="btn" href="#">Download Now!</a>
       </div>
     </section>
 
