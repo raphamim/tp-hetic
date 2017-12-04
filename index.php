@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
+    <section id="portfolio">
       <div class="container-fluid">
         <div class="row">
           <div class="resize-box">

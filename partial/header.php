@@ -16,11 +16,11 @@
         <nav id="mainNav">
         <div class="container">
             <a class="logo" href="#page-top">Start Bootstrap</a>
-            <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button> -->
             <div class="nav-right" id="navbarResponsive">
-            <ul>
+            <a href="#" class="burger__button" id="burger-button">
+                <span class="burger__button__icon"></span>
+            </a>
+            <ul class="burger__menu">
                 <li>
                 <a href="#about">About</a>
                 </li>

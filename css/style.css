@@ -324,3 +324,188 @@ header .btn {
 .contact-icon {
     display: inline-block;
 }
+
+
+/* Partie responsive */
+@media screen and (max-width: 780px) {
+    nav {
+        border-bottom: 1px solid rgba(33,37,41,.1);
+        background-color: #fff;
+    }
+    nav ul li a {
+        color:#212529;
+    }
+    nav ul li a:hover {
+        color:#f05f40;
+    }
+    .logo {
+        color: #f05f40;
+    }
+    #services .col-25 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0 10%;
+    }
+    .resize-box {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Burger menu */
+    * {
+        box-sizing: border-box;
+      }
+      body.open {
+        overflow: hidden;
+      }
+      body.open:before {
+        visibility: visible;
+        opacity: 1;
+      }
+      body:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease;
+        background-color: #fff;
+      }
+      .burger {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      }
+      .burger__button {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.5s ease;
+        border: 2px solid transparent;
+        box-shadow: 0px 0px 8px -2px #333;
+      }
+      .burger__button.open {
+        border: 2px solid #fff;
+        box-shadow: none;
+      }
+      .burger__button__icon {
+        display: inline-block;
+        position: absolute;
+        background: #fff;
+        margin: 0 auto;
+        width: 20px;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+        transform: translateY(-1px);
+      }
+      .burger__button__icon:before,
+      .burger__button__icon:after {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        background: #fff;
+        width: 20px;
+        height: 2px;
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+      }
+      .burger__button__icon:before {
+        bottom: 10px;
+      }
+      .burger__button__icon:after {
+        top: 10px;
+      }
+      .burger__button.open .burger__button__icon {
+        background: transparent;
+      }
+      .burger__button.open .burger__button__icon:before,
+      .burger__button.open .burger__button__icon:after {
+        transform-origin: 0 50%;
+        width: 28.28427125px;
+      }
+      .burger__button.open .burger__button__icon:before {
+        transform: rotateZ(0.78539816rad);
+      }
+      .burger__button.open .burger__button__icon:after {
+        transform: rotateZ(-0.78539816rad);
+      }
+      .burger__menu {
+        list-style-type: none;
+        padding: 0 0 0 20px;
+      }
+      .burger__menu li {
+        display: block;
+        position: relative;
+        margin: 15px 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        transform: translateX(-400px);
+      }
+      .burger__menu a {
+        display: block;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-left: 3px solid transparent;
+        padding-left: 0;
+      }
+      .burger__menu a:hover {
+        padding-left: 30px;
+        border-left: 3px solid #fff;
+      }
+      .burger__button.open + .burger__menu li {
+        transform: translateX(0);
+        visibility: visible;
+      }
+      .burger__button {
+        background-color: #7f7f7f;
+        position: relative;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    nav {
+        position: fixed;
+    }
+    header nav ul {
+        display: block;
+        position: absolute;
+        right: 80%;
+        top: 100%;
+    }
+    .open main,
+    .open footer,
+    .open .btn {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .resize-box {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #contact p {
+        margin: 0;
+    }
+    header nav ul {
+        right: 70%;
+    }
+  }
+/* burger desktop */
+  @media screen and (min-width: 780px) {.burger__button {display: none;}}
